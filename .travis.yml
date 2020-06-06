@@ -15,8 +15,8 @@ cache:
   - pip
 install: 
   - pip install --upgrade pip
-  - pip install tox-travis
-script: tox --parallel all
+  - pip install tox
+script: tox
 
 notifications:
   webhooks: https://galaxy.ansible.com/api/v1/notifications/
