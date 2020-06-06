@@ -1,0 +1,8 @@
+[raspbian32]
+growatt ansible_host=192.168.178.35
+pihole4.fritz.box
+
+[raspbian64]
+
+[ubuntu64]
+pi4 ansible_host=192.168.178.78

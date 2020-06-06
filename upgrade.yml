@@ -1,0 +1,11 @@
+- hosts: all
+  become: true
+  gather_facts: true
+  tasks:
+  - name: update apt cache
+    apt:
+      update-cache: true
+      cache_valid_time: 3600
+  - name: upgrade the systems
+    apt:
+      upgrade: full   

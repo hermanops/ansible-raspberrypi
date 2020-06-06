@@ -1,0 +1,9 @@
+- hosts: all
+  become: true
+  gather_facts: true
+  tasks:
+  - name: install the pi-ssh-key on all systems
+    authorized_key:
+      key: "{{ lookup('file', '~/.ssh/id_rsa.pub') }}"
+      user: "{{ ansible_userid }}"
+      state: present    
